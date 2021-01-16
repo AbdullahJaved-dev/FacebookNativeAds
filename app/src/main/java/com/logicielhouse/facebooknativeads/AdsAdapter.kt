@@ -129,7 +129,7 @@ class AdsAdapter(
             itemView.findViewById(R.id.ad_choices_container)
     }
 
-    class DataViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvData = itemView.findViewById<TextView>(R.id.tvData)
+    class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tvData: TextView = itemView.findViewById(R.id.tvData)
     }
 }
